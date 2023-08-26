@@ -1,0 +1,48 @@
+<!-- edit_post и new_post должны быть идентичны -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <title>Изменение статьи</title>
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_k9eGad6gKFPeauweocmU4HVxTkpmNXj9TlVwrDyLahSTH69l5jaFyZouRvnvqja8GYA53RjRLr3eBRU9pWaTwg3ILYvynY_XuHEVFkirn8JnrM5hRWN99aIF9IGf7LWhY6pZJTxpiflYCA4MQ4gx6xNvpIAvyS7Y8qNCWoHbY2yyE5t-qZIT8dx0v7yg4LiGwuuPJE3bFeZANZBb9H-np9LD63DBpTzFYnyZ62_Vzhm_5gkqtlkLngNLkIw6U5DsFGMxP1ecArUwqom1QbzQI-3oDe2_yL1KLI366Y9DyNwazAOhchUEVSWyhD2dSK7SDD3QQYIzSCdS-RVXj33fIsVDEyx-GYTfllk9ZNLlxORLM42VSzGgC3IsIFUPcU6Zm609YZRqlY0T-eE-ZFYRXaiPjnVgalJLVM6iUCoyWie2Stbps815LG-gvICDX3Ncl34qnXTCb_ZA5sCd0_RRFRjncvQt9ins0xvAJ5I1BSzRhGiv3wvh6zVCmBagtKB5DZxpXPUWE_W8835yiQHUni92QASmWWeGXdpBlQxuqkQBYeGvlIeZV0PB19Ef_buNba0Vm4JrJ6fwpqmyldcvz8KgYgUX7PSCpzNl57OFpKXqtu-M07uuW4-GLOyRbBer-YVghI-E5LcrOovnblPbG0TJoSaKIpZqb9Aar9bnDcRamaeST6CUSXqwjdR5mVClLbJTcPhlbTqf_yGbxle0-5unU9eA_Qhwq18A2GMxxTFcGXtNFfjyrMnkbx4GcZ7HKEh1MZNKDp-qRRiXpHVUw7FQ3Zha6N3NlUFW2fJUN5W3NW-Fo6fstKFrcqy8PQBedT9qeHcZlmMyFwhMjEp-hr_ZZ5APJori3nAK9wJ8QOi4-lAeS6mQapahNuZq5JbrCVbaQpwGJMmnpWyOnPxeAS3qtHx9E3FnBVE99FiMqZHdUNGMZfsJwEaiYzdHSGPMq1FQAssqVzmgZ1CYCCVLTGLxItN9_WwH9C-anRMu9F0LJdKv6ARnpn06TBfhQ1u_GIkp6umUxS89QPbx8L4cOr2RVHOwRihrABU7qrNFbE" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zODQ1c2FzLnN0b3JhZ2UueWFuZGV4Lm5ldC9yZGlzay9jMDNmODY1MTEzMWIzNDEzY2NkMzYzZmExMmY1ZWRjOGY0ZWYzZjFmODI1YzYwOWUzZGYyN2VkOTY4OWU2YjAyLzY0ZDk0NTU5L1NjQ0lyeHV1NXpmOGExRVFTSHQtU1NiMlZPRThSb0tpelBUNnR3T3l0T29QWlJPOU9zUTd2VFp4Y1huR0ZLeVlkbEFwVm1KaDcwalN3VjRia1pzT01nPT0_dWlkPTAmZmlsZW5hbWU9ZWRpdF9wb3N0Lmh0bWwmZGlzcG9zaXRpb249YXR0YWNobWVudCZoYXNoPWpmYVJsT0Q2cHFKWm1pc1AvTWJkSER0OXIzVldqR0tqdk5zamEwam1ISTdickhvM0RNeFAlMmJaS09DM2thZzNBRXEvSjZicG1SeU9Kb25UM1ZvWG5EYWclM2QlM2QmbGltaXQ9MCZjb250ZW50X3R5cGU9dGV4dCUyZmh0bWwmb3duZXJfdWlkPTYwNjMwMTg1MCZmc2l6ZT0yMjY4JmhpZD1hNzczMDNmOTUzMGU5Y2U0Y2M0ZDdlNmVhMWQ2YTZjYiZtZWRpYV90eXBlPWRldmVsb3BtZW50JnRrbnY9djImcnRva2VuPWpIc1F1TnRzOFFuSSZmb3JjZV9kZWZhdWx0PW5vJnljcmlkPW5hLTM0NGVkYjZlMTVlMzRhNTAyZDlkNzRmZTdmNTgwZmE1LWRvd25sb2FkZXIxM2gmdHM9NjAyZDQ0YTY5NDg0MCZzPTQxNThjZjVhNjIwNDY4MDM5NDg3YTQ5Zjk0MDViZmMwOGU3YjA4ZWY1ZDM2M2NjZmMwMTc3N2RlODAyMTUwNDkmcGI9VTJGc2RHVmtYMS1wajAtT2hIa3BvRWdudEU4N2NRdGRBVi1Bcjg0dEhMenN1QkJrU2pPSl9qclU1WGRpWkxZZ2NNNk4wNmJoY2Y2S1B5LVJ1TmsycWV5VTdlVm9zUlJwMDRqQVI5cUJLcEE"/></head>
+<body class="container">
+    <main class="mt-5 container">
+        <form method="POST">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Название статьи</label>
+                <input type="text"
+                       class="form-control"
+                       id="exampleFormControlInput1"
+                       name="title"
+                       placeholder="Введите название статьи"
+                       value="{{ article.title }}">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Рубрика статьи</label>
+                <select class="form-control" name="category_select" id="exampleFormControlSelect1">
+                    {% for category in categories %}
+                        <option value="{{ category.id }}">{{ category.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Вступление статьи</label>
+                <textarea class="form-control" name="introduction" id="exampleFormControlTextarea1" rows="2">{{ article.introduction }}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Текст статьи</label>
+                <textarea class="form-control" name="article_text" id="exampleFormControlTextarea1" rows="5">{{ article.text }}</textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Опубликовать</button>
+                <a class="btn btn-danger" href="{{ url_for('index') }}">Отмена</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

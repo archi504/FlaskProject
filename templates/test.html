@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+</head>
+<body>
+    Возраст: {{ n }} лет <br> <!-- пример приема переменной из python -->
+    Имя: {{ name }} <br>
+    List: {{ lst }} <br>
+    
+    <!-- пример работы с циклом с помощью шаблонизатора Jinja -->
+    {% for i in lst %} 
+        <div>
+            Число: {{ i }}
+        </div>
+    {% endfor %}
+    
+    <br>
+    <!-- пример работы с условием с помощью шаблонизатора Jinja -->
+    {% if articles %} <!-- проверяем, есть ли в списке что-либо -->
+        {% for i in articles %}
+            <div>
+                {{ i }}
+            </div>
+        {% endfor %}
+    {% else %}
+            <p>Список пуст!</p>
+    {% endif %}
+
+</body>
+</html>

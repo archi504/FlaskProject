@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница {% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h1>Главная</h1>
+  <div class="row">
+    
+    <!-- пробежимся по циклу и вставим статьи из переменной articles -->
+    {% for article in articles %}
+    <div class="col-md-4">
+      <h2>{{ article.title }}</h2>
+      <p>
+        {{ article.introduction[:50].strip() }}
+      </p>
+      <p>
+        <!-- в ссылку детального просмотра вставляем название функции, которая создает шаблон детального просмотра статьи -->
+        <a 
+          href="{{ url_for('detailed_post', article_id=article.id) }}" 
+          role="button">Читать >>
+        </a>
+      </p>      
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
+
+
+
